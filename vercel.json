@@ -5,8 +5,8 @@
     { "src": "/client/*", "use": "@vercel/static" }
   ],
   "routes": [
-    { "handle": "filesystem", "src": "/server/(.*)" },
-    { "handle": "filesystem", "src": "/client/(.*)" },
+    { "src": "/client/(.*)", "dest": "/client/index.html" },
+    { "src": "/server/(.*)", "dest": "/server/index.ts" },
     { "src": "/(.*)", "dest": "/client/index.html" }
   ]
 }
