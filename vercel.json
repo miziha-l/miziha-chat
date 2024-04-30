@@ -1,11 +1,13 @@
 {
   "version": 2,
-  "headers": {
-    "/*": {
-      "Cache-Control": "public, max-age=3600",
-      "Content-Type": "application/javascript"
+  "headers": [
+    {
+      "/*": {
+     
+        "Content-Type": "application/javascript"
+      }
     }
-  },
+  ],
   "builds": [
     { "src": "/server/*", "use": "@vercel/node" },
     { "src": "/client/*", "use": "@vercel/static" }
