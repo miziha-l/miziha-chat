@@ -2,10 +2,10 @@
   "version": 2,
   "headers": [
     {
-      "/*": {
-     
-        "Content-Type": "application/javascript"
-      }
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=3600" },
+        { "key": "Content-Type", "value"}: "application/javascript"
+      ]
     }
   ],
   "builds": [
